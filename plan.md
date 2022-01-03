@@ -1,7 +1,7 @@
 ## Services:
 
-- [ ] fetchDogs
-- [ ] fetchDogById
+- [x] fetchDogs
+- [x] fetchDogById
 
 ## Routing:
 
