@@ -14,13 +14,17 @@ function App() {
               Home
             </NavLink> */}
             <NavLink to="/dogs" className="dogs-list-link">
-              Adoptable Friends
+              Home
             </NavLink>
           </header>
 
           <Switch>
-            <Route exact path="/dogs" component={Dogs} />
-            <Route exact path="/dogs/:id" component={Dog} />
+            <Route exact path="/dogs">
+              <Dogs />
+            </Route>
+            <Route exact path="/dogs/:id">
+              <Dog />
+            </Route>
             <Route exact path="/" />
           </Switch>
         </BrowserRouter>
