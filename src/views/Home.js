@@ -15,7 +15,7 @@ export default function Dogs() {
       setDogs(data);
       timer = setTimeout(() => {
         setLoading(false);
-      }, 1500);
+      }, 1200);
     };
     if (loading) {
       fetchData();
@@ -26,13 +26,13 @@ export default function Dogs() {
   }, [loading]);
 
   return (
-    <div>
-      {loading && <span className="loader"></span>}
+    <>
+      {loading && <div className="loader"></div>}
       {!loading && (
-        <>
+        <div>
           <DogsList dogs={dogs} />
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 }

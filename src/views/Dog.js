@@ -28,13 +28,13 @@ export default function Dog() {
   }, [params.id, loading]);
 
   return (
-    <div>
-      {loading && <span className="loader"></span>}
+    <>
+      {loading && <div className="loader"></div>}
       {!loading && (
-        <>
+        <div>
           <DogDetail dog={dog} />
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 }

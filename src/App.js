@@ -1,7 +1,7 @@
 import './App.css';
 import { Route } from 'react-router-dom';
 import { BrowserRouter, NavLink, Switch } from 'react-router-dom';
-import Dogs from './views/Dogs';
+import Home from './views/Home';
 import Dog from './views/Dog';
 
 function App() {
@@ -10,9 +10,6 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <header className="header-links">
-            {/* <NavLink to="/home" className="home-link">
-              Home
-            </NavLink> */}
             <NavLink to="/dogs" className="dogs-list-link">
               Home
             </NavLink>
@@ -20,12 +17,14 @@ function App() {
 
           <Switch>
             <Route exact path="/dogs">
-              <Dogs />
+              <Home />
             </Route>
             <Route exact path="/dogs/:id">
               <Dog />
             </Route>
-            <Route exact path="/" />
+            <Route exact path="/">
+              <Home />
+            </Route>
           </Switch>
         </BrowserRouter>
       </header>
