@@ -23,6 +23,6 @@
 
 ### Dog View
 
-- [ ] useState/useEffect to fetchDogs by Id
-- [ ] DogDetail component
-- [ ] useParams() to match params by id to render individual dog details
+- [x] useState/useEffect to fetchDogs by Id
+- [x] DogDetail component
+- [x] useParams() to match params by id to render individual dog details

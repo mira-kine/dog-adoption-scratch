@@ -11,7 +11,7 @@ export default function DogsList({ dogs }) {
             <div className="dog-card" key={dog.id}>
               <h2>Meet {dog.name}</h2>
               <Link key={dog.id} to={`/dogs/${dog.id}`}>
-                <img src={`https://placedog.net/500?id=${dog.id}`}></img>
+                <img src={dog.image}></img>
               </Link>
               <p>
                 {dog.name} is a(n) {dog.age} year old {dog.breed}
