@@ -1,8 +1,9 @@
 import './App.css';
 import { Route } from 'react-router-dom';
 import { BrowserRouter, NavLink, Switch } from 'react-router-dom';
-import Home from './views/Home';
+import Dogs from './views/Dogs';
 import Dog from './views/Dog';
+import Header from './components/Header/Header';
 
 function App() {
   return (
@@ -17,13 +18,13 @@ function App() {
 
           <Switch>
             <Route exact path="/dogs">
-              <Home />
+              <Dogs />
             </Route>
             <Route exact path="/dogs/:id">
               <Dog />
             </Route>
             <Route exact path="/">
-              <Home />
+              <Header />
             </Route>
           </Switch>
         </BrowserRouter>
