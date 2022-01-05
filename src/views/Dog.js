@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { fetchDogById } from '../services/dogs';
 import DogDetail from '../components/DogDetail';
 import './Dog-View.css';
+import Header from '../components/Header/Header';
 
 export default function Dog() {
   const [dog, setDog] = useState([]);
@@ -33,6 +34,7 @@ export default function Dog() {
       {!loading && (
         <div>
           <DogDetail dog={dog} />
+          <Header />
         </div>
       )}
     </>

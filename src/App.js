@@ -11,21 +11,21 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <header className="header-links">
-            <NavLink to="/dogs" className="dogs-list-link">
+            {/* <NavLink to="/" className="dogs-list-link">
               Home
-            </NavLink>
+            </NavLink> */}
           </header>
 
           <Switch>
-            <Route exact path="/dogs">
+            <Route exact path="/">
               <Dogs />
             </Route>
             <Route exact path="/dogs/:id">
               <Dog />
             </Route>
-            <Route exact path="/">
+            {/* <Route exact path="/">
               <Header />
-            </Route>
+            </Route> */}
           </Switch>
         </BrowserRouter>
       </header>
