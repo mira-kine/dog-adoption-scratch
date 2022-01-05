@@ -1,20 +1,15 @@
 import './App.css';
 import { Route } from 'react-router-dom';
-import { BrowserRouter, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import Dogs from './views/Dogs';
 import Dog from './views/Dog';
-import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <BrowserRouter>
-          <header className="header-links">
-            {/* <NavLink to="/" className="dogs-list-link">
-              Home
-            </NavLink> */}
-          </header>
+          <header className="header-links"></header>
 
           <Switch>
             <Route exact path="/">
@@ -23,9 +18,6 @@ function App() {
             <Route exact path="/dogs/:id">
               <Dog />
             </Route>
-            {/* <Route exact path="/">
-              <Header />
-            </Route> */}
           </Switch>
         </BrowserRouter>
       </header>
