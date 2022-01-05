@@ -12,4 +12,5 @@ test('should render an individual dog', async () => {
     </MemoryRouter>
   );
   await screen.findByText('Franny');
+  expect(container).toMatchSnapshot();
 });

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an individual dog 1`] = `
+<div>
+  <div>
+    <div
+      class="dog-card"
+    >
+      <h1>
+        Franny
+      </h1>
+      <img
+        src="https://placedog.net/500?id=51"
+      />
+      <p>
+        Franny
+         is a(n) 
+        4
+         year old 
+        French Bulldog
+      </p>
+      <p>
+        Sweet Frenchie with lots of love to give.
+      </p>
+    </div>
+    <div>
+      <a
+        href="/"
+      >
+        Home
+      </a>
+    </div>
+  </div>
+</div>
+`;
