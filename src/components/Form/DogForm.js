@@ -9,6 +9,7 @@ export default function DogForm({ selectedDog, updateDogValue, handleSubmit }) {
           <label>
             Name:
             <input
+              placeholder="name"
               value={selectedDog.name}
               name="name"
               type="text"

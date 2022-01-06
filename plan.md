@@ -39,7 +39,9 @@ To do 01/05/21:
 - [x] updateDog function that takes in the key you want to update + value
   - have the value set into the key, set the state back as a new object using a spread operator
 - [x] services folder: create an updateDogDb - updating dog to database
-- [ ] submit button sends data to supabase using a click Handler that will update
-- [ ] create submit handle with an async function that will call db
+- [x] submit button sends data to supabase using a click Handler that will update
+- [x] create submit handle with an async function that will call db
 
-- [ ] add route for admin page (creating a new dog vs updating)
+- [x] add route for admin page (creating a new dog vs updating)
+  - no useEffect necessary in Admin View because we are not fetching Data yet
+- [x] createDog function in services folder -> use .insert
