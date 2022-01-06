@@ -5,31 +5,41 @@ import DogForm from '../../components/Form/DogForm';
 import { fetchDogById, updateDog } from '../../services/dogs';
 
 export default function DogEdit() {
-  const [dog, setDog] = useState({});
+  const [selectedDog, setDog] = useState({});
+  const [loading, setLoading] = useState(true);
   const params = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = fetchDogById(params.id);
+      const data = await fetchDogById(params.id);
       setDog(data);
+      setLoading(false);
     };
     fetchData();
   }, [params.id]);
 
+  if (loading) {
+    return <h1>loading</h1>;
+  }
+
   const updateDogValue = (key, value) => {
-    dog[key] = value;
-    setDog({ ...dog });
+    selectedDog[key] = value;
+    setDog({ ...selectedDog });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDog(dog);
+    await updateDog(selectedDog);
   };
 
   return (
     <div>
       <h1>
-        <DogForm dog={{ ...dog }} handleSubmit={handleSubmit} updateDogValue={updateDogValue} />
+        <DogForm
+          selectedDog={{ ...selectedDog }}
+          handleSubmit={handleSubmit}
+          updateDogValue={updateDogValue}
+        />
       </h1>
     </div>
   );
