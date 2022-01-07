@@ -16,6 +16,9 @@ exports[`should render an individual dog 1`] = `
       <form
         class="dog-form"
       >
+        <h1>
+          Dog Create/Edit Form
+        </h1>
         <label>
           Name:
         </label>
@@ -23,7 +26,7 @@ exports[`should render an individual dog 1`] = `
           name="name"
           placeholder="name"
           type="text"
-          value="Tyson"
+          value="Mookie"
         />
         <label>
           Age:
@@ -32,7 +35,7 @@ exports[`should render an individual dog 1`] = `
           name="age"
           placeholder="age"
           type="text"
-          value="2"
+          value="1"
         />
         <label>
           Breed:
@@ -41,7 +44,7 @@ exports[`should render an individual dog 1`] = `
           name="breed"
           placeholder="breed"
           type="text"
-          value="Husky"
+          value="Goldendoodle"
         />
         <label>
           Image:
@@ -50,7 +53,8 @@ exports[`should render an individual dog 1`] = `
           name="image"
           placeholder="image"
           type="text"
-          value="https://placedog.net/500?id=140"
+          value="https://placedog.net/500?id=200
+"
         />
         <label>
           Bio:
@@ -59,7 +63,7 @@ exports[`should render an individual dog 1`] = `
           name="bio"
           placeholder="bio"
           type="text"
-          value="Tyson is sweet and simple. Loves to play at the park, a gentle giant."
+          value="Mellow and full of energy at the same time. Hypoallergenic."
         />
         <button
           class="submit-button"

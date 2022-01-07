@@ -19,6 +19,9 @@ exports[`renders Admin page 1`] = `
         <form
           class="dog-form"
         >
+          <h1>
+            Dog Create/Edit Form
+          </h1>
           <label>
             Name:
           </label>
