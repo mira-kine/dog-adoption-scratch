@@ -1,4 +1,4 @@
-import { MemoryRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { MemoryRouter, Route } from 'react-router-dom';
 import DogEdit from '../Edit/DogEdit';
 import { render, screen } from '@testing-library/react';
 

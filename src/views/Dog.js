@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useHistory, useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { useHistory, useParams } from 'react-router-dom';
 import { deleteDog, fetchDogById } from '../services/dogs';
 import DogDetail from '../components/DogDetail';
 import './Dog-View.css';
@@ -19,7 +19,7 @@ export default function Dog() {
       setDog(data);
       timer = setTimeout(() => {
         setLoading(false);
-      }, 750);
+      }, 100);
     };
     if (loading) {
       fetchData();

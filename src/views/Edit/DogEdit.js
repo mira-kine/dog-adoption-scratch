@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { useParams } from 'react-router-dom';
 import DogForm from '../../components/Form/DogForm';
 import Header from '../../components/Header/Header';
 import { fetchDogById, updateDog } from '../../services/dogs';
@@ -17,7 +17,7 @@ export default function DogEdit() {
       setDog(data);
       timer = setTimeout(() => {
         setLoading(false);
-      }, 750);
+      }, 100);
     };
     if (loading) {
       fetchData();

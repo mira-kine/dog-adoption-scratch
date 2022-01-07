@@ -1,4 +1,4 @@
-import { MemoryRouter, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { MemoryRouter, Route } from 'react-router-dom';
 import Dog from '../views/Dog';
 import { render, screen } from '@testing-library/react';
 
