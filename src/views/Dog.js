@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
-import { fetchDogById } from '../services/dogs';
+import { deleteDog, fetchDogById } from '../services/dogs';
 import DogDetail from '../components/DogDetail';
 import './Dog-View.css';
 import Header from '../components/Header/Header';
@@ -28,12 +28,16 @@ export default function Dog() {
     };
   }, [params.id, loading]);
 
+  const handleDelete = async (e) => {
+    e.preventDefault();
+    await deleteDog(dog.id);
+  };
   return (
     <>
       {loading && <div className="loader"></div>}
       {!loading && (
         <div>
-          <DogDetail dog={dog} />
+          <DogDetail dog={dog} handleDelete={handleDelete} />
           <Header />
         </div>
       )}

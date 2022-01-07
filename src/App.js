@@ -13,13 +13,9 @@ function App() {
         <BrowserRouter>
           <header className="header-links">
             <NavLink to="/admin">Admin</NavLink>
-            <NavLink to="/">Home</NavLink>
           </header>
 
           <Switch>
-            <Route exact path="/">
-              <Dogs />
-            </Route>
             <Route exact path="/dogs/:id/edit">
               <DogEdit />
             </Route>
@@ -28,6 +24,9 @@ function App() {
             </Route>
             <Route exact path="/admin">
               <Admin />
+            </Route>
+            <Route exact path="/">
+              <Dogs />
             </Route>
           </Switch>
         </BrowserRouter>

@@ -30,6 +30,7 @@ export default function DogEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateDog(selectedDog);
+    // <Redirect to="/" exact />;
   };
 
   return (
