@@ -15,10 +15,16 @@ export default function Admin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await createDog(selectedDog);
+    if (selectedDog) {
+      alert("You've successfully added a dog");
+    } else {
+      alert('Database request failed, try again');
+    }
   };
 
   return (
     <div>
+      <Header />
       <p>
         <DogForm
           selectedDog={{ ...selectedDog }}
@@ -26,7 +32,6 @@ export default function Admin() {
           updateDogValue={updateDogValue}
         />
       </p>
-      <Header />
     </div>
   );
 }

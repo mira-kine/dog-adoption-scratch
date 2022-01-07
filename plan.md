@@ -45,3 +45,9 @@ To do 01/05/21:
 - [x] add route for admin page (creating a new dog vs updating)
   - no useEffect necessary in Admin View because we are not fetching Data yet
 - [x] createDog function in services folder -> use .insert
+- [x] error message if supabase request fails for both edit and admin
+- [x] success messages for both edit and admin
+- [x] redirect to home page after successful deletion
+- Snapshot tests
+  - [ ] Admin view
+  - [ ] Edit view

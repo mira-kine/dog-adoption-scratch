@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import DogForm from '../../components/Form/DogForm';
+import Header from '../../components/Header/Header';
 import { fetchDogById, updateDog } from '../../services/dogs';
 
 export default function DogEdit() {
@@ -30,18 +31,19 @@ export default function DogEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateDog(selectedDog);
-    // <Redirect to="/" exact />;
+    alert("You've successfully updated your dog");
   };
 
   return (
     <div>
-      <h1>
+      <Header />
+      <p>
         <DogForm
           selectedDog={{ ...selectedDog }}
           handleSubmit={handleSubmit}
           updateDogValue={updateDogValue}
         />
-      </h1>
+      </p>
     </div>
   );
 }
