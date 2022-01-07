@@ -16,11 +16,11 @@ function App() {
           </header>
 
           <Switch>
-            <Route exact path="/dogs/:id/edit">
-              <DogEdit />
-            </Route>
             <Route exact path="/dogs/:id">
               <Dog />
+            </Route>
+            <Route exact path="/dogs/:id/edit">
+              <DogEdit />
             </Route>
             <Route exact path="/admin">
               <Admin />

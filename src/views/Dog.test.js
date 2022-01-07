@@ -5,12 +5,12 @@ import { render, screen } from '@testing-library/react';
 test('should render an individual dog', async () => {
   // render the component
   const { container } = render(
-    <MemoryRouter initialEntries={['/dogs/4']}>
+    <MemoryRouter initialEntries={['/dogs/9']}>
       <Route path="/dogs/:id">
         <Dog />
       </Route>
     </MemoryRouter>
   );
-  await screen.findByText('Franny');
+  await screen.findByText('Pup');
   expect(container).toMatchSnapshot();
 });

@@ -33,10 +33,7 @@ export default function Dog() {
     e.preventDefault();
     await deleteDog(dog.id);
     alert("You've successfully deleted your dog");
-    // window.location.replace('/');
-    const redirect = () => {
-      history.push('/');
-    };
+    window.location.replace('/');
   };
 
   return (

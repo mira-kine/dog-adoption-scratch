@@ -7,21 +7,28 @@ exports[`should render an individual dog 1`] = `
       class="dog-card"
     >
       <h1>
-        Franny
+        Pup
       </h1>
       <img
-        src="https://placedog.net/500?id=51"
+        src="https://placedog.net/500?id=30"
       />
       <p>
-        Franny
+        Pup
          is a(n) 
-        4
+        3
          year old 
-        French Bulldog
       </p>
-      <p>
-        Sweet Frenchie with lots of love to give.
-      </p>
+      <p />
+      <button>
+        <a
+          href="/dogs/9/edit"
+        >
+          Edit
+        </a>
+      </button>
+      <button>
+        Delete
+      </button>
     </div>
     <div>
       <a

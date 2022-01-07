@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Admin page 1`] = `
+<div>
+  <div>
+    <div>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Home
+      </a>
+    </div>
+    <p>
+      <div
+        class="form-container"
+      >
+        <form>
+          <label>
+            Name:
+            <input
+              name="name"
+              placeholder="name"
+              type="text"
+              value=""
+            />
+          </label>
+          <label>
+            Age:
+            <input
+              name="age"
+              placeholder="age"
+              type="text"
+              value=""
+            />
+          </label>
+          <label>
+            Breed:
+            <input
+              name="breed"
+              placeholder="breed"
+              type="text"
+              value=""
+            />
+          </label>
+          <label>
+            Image:
+            <input
+              name="image"
+              placeholder="image"
+              type="text"
+              value=""
+            />
+          </label>
+          <label>
+            Bio:
+            <input
+              name="bio"
+              placeholder="bio"
+              type="text"
+              value=""
+            />
+          </label>
+          <button>
+            Submit
+          </button>
+        </form>
+      </div>
+    </p>
+  </div>
+</div>
+`;
