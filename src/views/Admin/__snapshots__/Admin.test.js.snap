@@ -12,7 +12,7 @@ exports[`renders Admin page 1`] = `
         Home
       </a>
     </div>
-    <p>
+    <div>
       <div
         class="form-container"
       >
@@ -67,7 +67,7 @@ exports[`renders Admin page 1`] = `
           </button>
         </form>
       </div>
-    </p>
+    </div>
   </div>
 </div>
 `;

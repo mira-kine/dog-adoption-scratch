@@ -11,17 +11,21 @@ export default function DogEdit() {
   const params = useParams();
 
   useEffect(() => {
+    let timer;
     const fetchData = async () => {
       const data = await fetchDogById(params.id);
       setDog(data);
-      setLoading(false);
+      timer = setTimeout(() => {
+        setLoading(false);
+      }, 750);
     };
-    fetchData();
-  }, [params.id]);
-
-  if (loading) {
-    return <h1>loading</h1>;
-  }
+    if (loading) {
+      fetchData();
+    }
+    return () => {
+      clearInterval(timer);
+    };
+  }, [params.id, loading]);
 
   const updateDogValue = (key, value) => {
     selectedDog[key] = value;
@@ -30,20 +34,26 @@ export default function DogEdit() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDog(selectedDog);
-    alert("You've successfully updated your dog");
+    try {
+      await updateDog(selectedDog);
+    } catch {
+      alert('failed to update');
+    }
   };
 
   return (
-    <div>
-      <Header />
-      <p>
-        <DogForm
-          selectedDog={{ ...selectedDog }}
-          handleSubmit={handleSubmit}
-          updateDogValue={updateDogValue}
-        />
-      </p>
-    </div>
+    <>
+      {loading && <div className="loader"></div>}
+      {!loading && (
+        <div>
+          <Header />
+          <DogForm
+            selectedDog={{ ...selectedDog }}
+            handleSubmit={handleSubmit}
+            updateDogValue={updateDogValue}
+          />
+        </div>
+      )}
+    </>
   );
 }

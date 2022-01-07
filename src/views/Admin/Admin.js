@@ -14,24 +14,23 @@ export default function Admin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createDog(selectedDog);
-    if (selectedDog !== {}) {
-      alert("You've successfully added a dog");
-    } else {
-      alert('Database request failed, try again');
+    try {
+      await createDog(selectedDog);
+    } catch {
+      alert('failed to update');
     }
   };
 
   return (
     <div>
       <Header />
-      <p>
+      <div>
         <DogForm
           selectedDog={{ ...selectedDog }}
           handleSubmit={handleSubmit}
           updateDogValue={updateDogValue}
         />
-      </p>
+      </div>
     </div>
   );
 }

@@ -49,5 +49,5 @@ To do 01/05/21:
 - [x] success messages for both edit and admin
 - [x] redirect to home page after successful deletion
 - Snapshot tests
-  - [ ] Admin view
+  - [x] Admin view
   - [ ] Edit view
