@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { useHistory, useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { deleteDog, fetchDogById } from '../services/dogs';
 import DogDetail from '../components/DogDetail';
 import './Dog-View.css';
@@ -10,6 +10,7 @@ export default function Dog() {
   const [dog, setDog] = useState([]);
   const [loading, setLoading] = useState(true);
   const params = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     let timer;
@@ -32,7 +33,7 @@ export default function Dog() {
     e.preventDefault();
     await deleteDog(dog.id);
     alert("You've successfully deleted your dog");
-    window.location.replace('/');
+    history.push('/');
   };
 
   return (
