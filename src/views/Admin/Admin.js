@@ -16,6 +16,7 @@ export default function Admin() {
     e.preventDefault();
     try {
       await createDog(selectedDog);
+      alert('You added a dog!');
     } catch {
       alert('failed to update');
     }

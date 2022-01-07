@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 test('should render an individual dog', async () => {
   // render the component
   const { container } = render(
-    <MemoryRouter initialEntries={['/dogs/5']}>
+    <MemoryRouter initialEntries={['/dogs/5/edit']}>
       <Route path="/dogs/:id/edit" component={DogEdit} />
     </MemoryRouter>
   );

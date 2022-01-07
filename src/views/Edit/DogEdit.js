@@ -36,6 +36,7 @@ export default function DogEdit() {
     e.preventDefault();
     try {
       await updateDog(selectedDog);
+      alert('You added a dog!');
     } catch {
       alert('failed to update');
     }
