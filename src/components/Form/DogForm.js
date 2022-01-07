@@ -7,6 +7,7 @@ export default function DogForm({ selectedDog, updateDogValue, handleSubmit }) {
     <>
       <div className="form-container">
         <form className="dog-form">
+          <h1>Dog Create/Edit Form</h1>
           <label>Name:</label>
           <input
             placeholder="name"
