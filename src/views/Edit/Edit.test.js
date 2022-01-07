@@ -9,6 +9,6 @@ test('should render an individual dog', async () => {
       <Route path="/dogs/:id/edit" component={DogEdit} />
     </MemoryRouter>
   );
-  await screen.findByText('Name:');
+  await screen.findByDisplayValue('Tyson');
   expect(container).toMatchSnapshot();
 });
