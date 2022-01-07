@@ -16,54 +16,58 @@ exports[`renders Admin page 1`] = `
       <div
         class="form-container"
       >
-        <form>
+        <form
+          class="dog-form"
+        >
           <label>
             Name:
-            <input
-              name="name"
-              placeholder="name"
-              type="text"
-              value=""
-            />
           </label>
+          <input
+            name="name"
+            placeholder="name"
+            type="text"
+            value=""
+          />
           <label>
             Age:
-            <input
-              name="age"
-              placeholder="age"
-              type="text"
-              value=""
-            />
           </label>
+          <input
+            name="age"
+            placeholder="age"
+            type="text"
+            value=""
+          />
           <label>
             Breed:
-            <input
-              name="breed"
-              placeholder="breed"
-              type="text"
-              value=""
-            />
           </label>
+          <input
+            name="breed"
+            placeholder="breed"
+            type="text"
+            value=""
+          />
           <label>
             Image:
-            <input
-              name="image"
-              placeholder="image"
-              type="text"
-              value=""
-            />
           </label>
+          <input
+            name="image"
+            placeholder="image"
+            type="text"
+            value=""
+          />
           <label>
             Bio:
-            <input
-              name="bio"
-              placeholder="bio"
-              type="text"
-              value=""
-            />
           </label>
-          <button>
-            Submit
+          <input
+            name="bio"
+            placeholder="bio"
+            type="text"
+            value=""
+          />
+          <button
+            class="submit-button"
+          >
+            Add Dog
           </button>
         </form>
       </div>

@@ -13,54 +13,58 @@ exports[`should render an individual dog 1`] = `
     <div
       class="form-container"
     >
-      <form>
+      <form
+        class="dog-form"
+      >
         <label>
           Name:
-          <input
-            name="name"
-            placeholder="name"
-            type="text"
-            value="Tyson"
-          />
         </label>
+        <input
+          name="name"
+          placeholder="name"
+          type="text"
+          value="Tyson"
+        />
         <label>
           Age:
-          <input
-            name="age"
-            placeholder="age"
-            type="text"
-            value="2"
-          />
         </label>
+        <input
+          name="age"
+          placeholder="age"
+          type="text"
+          value="2"
+        />
         <label>
           Breed:
-          <input
-            name="breed"
-            placeholder="breed"
-            type="text"
-            value="Husky"
-          />
         </label>
+        <input
+          name="breed"
+          placeholder="breed"
+          type="text"
+          value="Husky"
+        />
         <label>
           Image:
-          <input
-            name="image"
-            placeholder="image"
-            type="text"
-            value="https://placedog.net/500?id=140"
-          />
         </label>
+        <input
+          name="image"
+          placeholder="image"
+          type="text"
+          value="https://placedog.net/500?id=140"
+        />
         <label>
           Bio:
-          <input
-            name="bio"
-            placeholder="bio"
-            type="text"
-            value="Tyson is sweet and simple. Loves to play at the park, a gentle giant."
-          />
         </label>
-        <button>
-          Submit
+        <input
+          name="bio"
+          placeholder="bio"
+          type="text"
+          value="Tyson is sweet and simple. Loves to play at the park, a gentle giant."
+        />
+        <button
+          class="submit-button"
+        >
+          Add Dog
         </button>
       </form>
     </div>
