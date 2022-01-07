@@ -1,0 +1,17 @@
+.dog-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: orange 2px solid;
+  background-color: papayawhip;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+.submit-button {
+  width: 100px;
+}

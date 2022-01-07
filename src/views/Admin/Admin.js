@@ -17,7 +17,7 @@ export default function Admin() {
     try {
       await createDog(selectedDog);
       alert('You added a dog!');
-    } catch {
+    } catch (e) {
       alert('failed to update');
     }
   };
