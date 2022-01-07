@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Redirect, useParams, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { deleteDog, fetchDogById } from '../services/dogs';
 import DogDetail from '../components/DogDetail';
 import './Dog-View.css';
@@ -10,7 +10,6 @@ export default function Dog() {
   const [dog, setDog] = useState([]);
   const [loading, setLoading] = useState(true);
   const params = useParams();
-  const history = useHistory();
 
   useEffect(() => {
     let timer;
