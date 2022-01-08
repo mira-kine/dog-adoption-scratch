@@ -28,7 +28,7 @@ export async function createDog(selectedDog) {
     breed: selectedDog.breed,
     bio: selectedDog.bio,
   });
-  return resp;
+  return checkError(resp);
 }
 
 export async function deleteDog(id) {
