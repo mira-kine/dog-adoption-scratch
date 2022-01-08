@@ -3,8 +3,25 @@ img {
   width: 400px;
   border-radius: 80%;
 }
+
+.dog-card-list {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+}
+
 .dog-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  width: 50vw;
+  height: 100%;
+  padding: 10px;
+  margin: 2vh;
+  border: black 2px solid;
+  border-radius: 25%;
+  background-color: papayawhip;
 }

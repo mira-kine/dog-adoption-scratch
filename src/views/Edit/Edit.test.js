@@ -1,16 +1,14 @@
 import { MemoryRouter, Route } from 'react-router-dom';
-import Dog from '../views/Dog';
+import DogEdit from '../Edit/DogEdit';
 import { render, screen } from '@testing-library/react';
 
 test('should render an individual dog', async () => {
   // render the component
   const { container } = render(
-    <MemoryRouter initialEntries={['/dogs/6']}>
-      <Route path="/dogs/:id">
-        <Dog />
-      </Route>
+    <MemoryRouter initialEntries={['/dogs/6/edit']}>
+      <Route path="/dogs/:id/edit" component={DogEdit} />
     </MemoryRouter>
   );
-  await screen.findByText('Mookie');
+  await screen.findByDisplayValue('Mookie');
   expect(container).toMatchSnapshot();
 });

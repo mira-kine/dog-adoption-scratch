@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an individual dog 1`] = `
+<div>
+  <div>
+    <div>
+      <a
+        href="/"
+      >
+        Home
+      </a>
+    </div>
+    <div
+      class="form-container"
+    >
+      <form
+        class="dog-form"
+      >
+        <h1>
+          Dog Create/Edit Form
+        </h1>
+        <label>
+          Name:
+        </label>
+        <input
+          name="name"
+          placeholder="name"
+          type="text"
+          value="Mookie"
+        />
+        <label>
+          Age:
+        </label>
+        <input
+          name="age"
+          placeholder="age"
+          type="text"
+          value="1"
+        />
+        <label>
+          Breed:
+        </label>
+        <input
+          name="breed"
+          placeholder="breed"
+          type="text"
+          value="Goldendoodle"
+        />
+        <label>
+          Image:
+        </label>
+        <input
+          name="image"
+          placeholder="image"
+          type="text"
+          value="https://placedog.net/500?id=200
+"
+        />
+        <label>
+          Bio:
+        </label>
+        <input
+          name="bio"
+          placeholder="bio"
+          type="text"
+          value="Mellow and full of energy at the same time. Hypoallergenic."
+        />
+        <button
+          class="submit-button"
+        >
+          Add Dog
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
